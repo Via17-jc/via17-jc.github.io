@@ -116,6 +116,11 @@ dd{margin:0;color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem;align-items
 dd.lang-list span.tag{display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--line);border-radius:999px;padding:.1rem .6rem .1rem .4rem;font-size:.9rem;color:var(--ink)}
 dd.lang-list svg{width:.85rem;height:.85rem}
 
+.skills-grid{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.skill-tag{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.5rem 1rem;font-size:.95rem;font-weight:500;transition:transform .15s ease,border-color .15s ease}
+.skill-tag:hover{transform:translateY(-2px);border-color:var(--accent)}
+.skill-tag .emoji{font-size:1.1rem;line-height:1}
+
 footer{padding:3rem 0 4rem;border-top:1px solid var(--line);color:var(--muted)}
 footer a{color:var(--ink)}
 footer a.icon-link{display:inline-flex;align-items:center;gap:.3rem}
@@ -162,7 +167,7 @@ footer a.icon-link svg{width:1rem;height:1rem;flex:none}
 <div class="wrap">
   <header class="top">
     <a href="#top">Viyah</a>
-    <nav><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <nav><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
@@ -236,6 +241,18 @@ footer a.icon-link svg{width:1rem;height:1rem;flex:none}
         <p>A CPU scheduling simulator with a Smart Advisor that supports FCFS, SJF, Priority Scheduling, and Round Robin algorithms..</p>
         <ul class="stack"><li><svg viewBox="0 0 24 24"><use href="#icon-py"/></svg>Python</li></ul>
       </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag"><span class="emoji">🎨</span>UI/UX &amp; Web Design</span>
+        <span class="skill-tag"><span class="emoji">🧠</span>Problem-Solving</span>
+        <span class="skill-tag"><span class="emoji">📚</span>Continuous Learning</span>
+        <span class="skill-tag"><span class="emoji">🛠️</span>Building Practical Projects</span>
+        <span class="skill-tag"><span class="emoji">🚀</span>Exploring New Technologies</span>
+      </div>
+    </section>
 
     <section id="about">
       <h2>About</h2>
@@ -253,13 +270,6 @@ footer a.icon-link svg{width:1rem;height:1rem;flex:none}
             <span class="tag"><svg viewBox="0 0 24 24"><use href="#icon-html"/></svg>HTML</span>
           </dd>
           <dt>Tools</dt><dd>React, Node.js, Git, Docker</dd>
-          <dt>Skills</dt><dd>💻 Programming and software development
-🎨 UI/UX and web design
-🧠 Problem-solving
-📚 Continuous learning
-🤝 Teamwork and collaboration
-🛠️ Building practical projects
-🚀 Exploring new technologies</dd>
           <dt>Currently learning</dt><dd>Rust, system design</dd>
         </dl>
       </div>
